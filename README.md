@@ -1,4 +1,4 @@
-# Strange Blog
+# Strange Blog(莫名其妙的部落格)
 事情是這樣的...
 1. 今年有意推甄碩班 但發現自己side project太少
 2. 市面主流筆記軟體有點不符合我的需求
