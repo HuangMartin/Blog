@@ -43,7 +43,8 @@ textarea::-webkit-scrollbar-thumb{
     border-radius: 10px;
 }
 
-.title,.article{
+.title,
+.article{
     width: 100%;
     min-height: 100px;
     height: auto;
@@ -57,7 +58,8 @@ textarea::-webkit-scrollbar-thumb{
     border-radius: 10px;
 }
 
-.title::placeholder,.article::placeholder{
+.title::placeholder,
+.article::placeholder{
     color: #2d2d2d;
 }
 
