@@ -9,15 +9,15 @@ app.use(express.static(initial_path));
 app.use(fileupload());
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(initial_path, "uploads/home.html"));
+    res.sendFile(path.join(initial_path, "home.html"));
 })
 
 app.get('/editor', (req,res) => {
-    res.sendFile(path.join(initial_path, "uploads/editor.html"));
+    res.sendFile(path.join(initial_path, "editor.html"));
 })
 
 app.post('/upload', (req,res) =>{
-    let file = req.file.image;
+    let file = req.files.image;
     let date = new Date();
 
     let imagename = date.getDate() + date.getTime() + file.name;
