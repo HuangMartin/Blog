@@ -8,15 +8,15 @@ const app = express();
 app.use(express.static(initial_path));
 app.use(fileupload());
 
-app.get('/', (req,res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(initial_path, "home.html"));
 })
 
-app.get('/editor', (req,res) => {
+app.get('/editor', (req, res) => {
     res.sendFile(path.join(initial_path, "editor.html"));
 })
 
-app.post('/upload', (req,res) =>{
+app.post('/upload', (req, res) =>{
     let file = req.files.image;
     let date = new Date();
 
