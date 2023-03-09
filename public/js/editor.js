@@ -71,7 +71,7 @@ publishBtn.addEventListener('click' , () => {
             publishedAt: `${date.getDate()} ${moths[date.getMonth()]} ${date.getFullYear()}`
         })
         .then(() => {
-            console.log('date entered');
+            location.href = `/${docName}`;
         })
         .catch((err) => {
             console.err(err);
