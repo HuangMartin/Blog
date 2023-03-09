@@ -1,14 +1,12 @@
 let firebaseConfig = {
-    apiKey: "AIzaSyCbVFjK-GzLShQfPApLdZhFzia5RIWty5U",
-    authDomain: "blogging-website-e6915.firebaseapp.com",
-    projectId: "blogging-website-e6915",
-    storageBucket: "blogging-website-e6915.appspot.com",
-    messagingSenderId: "141240064069",
-    appId: "1:141240064069:web:ad85c6b348ee8cc9bdab2c"
-};
+    apiKey: "AIzaSyA-j_HhkbMGLqJMwIFzOi28DlW-dajTRho",
+    authDomain: "blogging-site-dc1cf.firebaseapp.com",
+    projectId: "blogging-site-dc1cf",
+    storageBucket: "blogging-site-dc1cf.appspot.com",
+    messagingSenderId: "344539298242",
+    appId: "1:344539298242:web:02d0354a174c12d7a1be5b"
+  };
 
+  firebase.initializeApp(firebaseConfig);
 
-firebase = initializeApp(firebaseConfig);
-
-
-let db = firebase.firestore();
+  let db = firebase.firestore();
