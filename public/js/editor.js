@@ -65,11 +65,10 @@ publishBtn.addEventListener('click' , () => {
         let date = new Date();
 
         db.collection("blogs").doc(docName).set({
-            title:blogTitleField.value,
-            article:articleField.value,
-            bannerImage:bannerPath,
-            publishedAt: `${date.getDate()} ${moths[date.getMonth()]} 
-            ${date[getFullYear()]}`
+            title: blogTitleField.value,
+            article: articleField.value,
+            bannerImage: bannerPath,
+            publishedAt: `${date.getDate()} ${moths[date.getMonth()]} ${date.getFullYear()}`
         })
         .then(() => {
             console.log('date entered');
