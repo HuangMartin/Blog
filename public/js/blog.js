@@ -41,10 +41,23 @@ const addArticle = (ele, data) => {
             ele.innerHTML += `<${tag}>${item.slice(hCount, item.length)}</${tag}>`
         } 
         else if(item[0] == "!" && item[1] == "["){
-            // 54:51
+            let seperator;
+
+            for(let i = 0; i <= item.length; i++){
+                if(item[i] == "]" && item[i + 1] == "(" && item[item.length - 1] == ")")
+            {
+                seperator = i;
+            }
         }
-        
-        
+
+        let alt = item.slice(2, seperator);
+        let src = item.slice(seperator + 2, item.length - 1);
+        ele.innerHTML += `<img src="${src}" alt"${alt}" class="article-image">`;
+
+    }
+
+
+
         else{
             ele.innerHTML += `<p>${item}</p>`
         }
